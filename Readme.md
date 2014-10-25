@@ -39,4 +39,5 @@ class GitHubWrapper(github: GitHub)(implicit context: ExecutionContext) {
 }
 ```
 
-For more details check-out the example `com.rahulrav.example` packages in for both the Java and Scala examples.
+For more details check-out the [java](https://github.com/tikurahul/retrofit-play-wsclient/blob/master/src/main/java/com/rahulrav/example/GitHubClient.java)
+and [scala](https://github.com/tikurahul/retrofit-play-wsclient/blob/master/src/main/scala/com/rahulrav/example/GitHubAsync.scala) examples.
