@@ -79,7 +79,7 @@ class WSRetrofitClient(val defaultRequestTimeout: Int)(implicit context: Executi
         requestBuilder.stream()
       }
       case "HEAD" => {
-        requestBuilder.withMethod("HEAD").stream()
+        requestBuilder.withMethod(method).stream()
       }
       case _ => {
         throw new RuntimeException("Unsupported HTTP method")
