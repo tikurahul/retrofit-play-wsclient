@@ -14,7 +14,7 @@ to expose a `scala` wrapper that returns a `scala.concurrent.Future[T]` while al
 
 Let's say, we have the Retrofit HTTP interface defined:
 
-```
+```java
 public interface GitHub {
   static class Contributor {
     String login;
@@ -27,7 +27,7 @@ public interface GitHub {
 
 You can now expose a more convenient scala interface that looks like:
 
-```
+```scala
 class GitHubWrapper(github: GitHub)(implicit context: ExecutionContext) {
   def contributors(owner: String, repo: String): Future[util.List[Contributor]] = {
     val callback = new WSCallback[util.List[Contributor]]()

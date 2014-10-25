@@ -19,7 +19,7 @@ object GitHubWrapper {
 
 /**
  * Wraps the retrofit implementation of the interface defining all the HTTP APIs.
- * Exposes convinient Scala Futures.
+ * Exposes convenient Scala Futures.
  */
 
 class GitHubWrapper(github: GitHub)(implicit context: ExecutionContext) {
