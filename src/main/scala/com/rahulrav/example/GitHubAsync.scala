@@ -54,4 +54,6 @@ object Main extends App {
   contributors.asScala.foreach {
     contributor => println(s"${contributor.login}, ${contributor.contributions}")
   }
+
+  client.close()
 }
